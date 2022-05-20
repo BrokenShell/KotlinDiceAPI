@@ -7,20 +7,18 @@ import java.util.concurrent.ThreadLocalRandom
 
 @RestController
 class ResponseController {
+    val random: ThreadLocalRandom = ThreadLocalRandom.current()
 
     fun dice(rolls: Int, sides: Int): Int {
         var total = 0
-        for (i in 1..rolls) total += randomRange(1, sides)
+        (1..rolls).forEach { _ ->
+            total += randomRange(1, sides)
+        }
         return total
     }
 
     fun randomRange(lo: Int, hi: Int): Int {
-        val random = ThreadLocalRandom.current()
-        return when {
-            lo < hi -> lo + random.nextInt(1 + hi - lo)
-            lo == hi -> lo
-            else -> randomRange(hi, lo)
-        }
+        return lo + random.nextInt(1 + hi - lo)
     }
 
     @GetMapping("/")
