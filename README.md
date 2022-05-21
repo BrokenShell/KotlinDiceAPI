@@ -1,6 +1,6 @@
 <h1>Welcome to YARGA!</h1>
 <h2>Yet Another Random Generator API</h2>
-<h4>Bloom Institute of Technology<br>Robert Sharp Data Science Manager</h4>
+<h4>Bloom Institute of Technology<br>Robert Sharp, Data Science Manager</h4>
 <br>
 <h3>Abstract</h3>
 <p>YARGA provides convenient access to high-performance thread local random value generators via its friendly API.
