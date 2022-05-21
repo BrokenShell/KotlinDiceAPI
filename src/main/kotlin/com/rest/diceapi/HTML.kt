@@ -5,24 +5,10 @@ const val homepage: String = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <title>YARGA</title>
-    <style>
-        :root {
-            color-scheme: dark;
-        }
-
-        body {
-            margin: 40px;
-        }
-        section {
-            max-width: 900px;
-        }
-        header {
-            margin-bottom: 60px;
-        }
-        article {
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
 <header>

@@ -1,0 +1,73 @@
+body {
+    margin-bottom: 60px;
+    max-width: 1024px;
+}
+
+p {
+    font-family: Monaco, sans-serif;
+    font-size: 0.9em;
+    margin: 20px 60px;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+a, a:link, a:visited {
+    font-family: Monaco, sans-serif;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 20px 60px;
+    font-family: Monaco, sans-serif;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 1.9em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 40px 60px;
+    white-space: nowrap;
+}
+
+header h1 a:link, header h1 a:active, header h1 a:visited, header h1 a:hover {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+article {
+    margin-top: 60px;
+}
+
+article ul {
+    margin: 0 0 20px 0;
+}
+
+article li {
+    font-family: Monaco, sans-serif;
+    font-size: 1em;
+    margin: 3px 100px;
+}
