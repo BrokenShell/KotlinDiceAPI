@@ -7,8 +7,8 @@
     <article>
     <h3>Abstract</h3>
     <p>YARGA provides convenient access to high-performance thread local random value generators via its friendly API.
-    This codebase is intended to be used as a introductory teaching tool and may not represent current best practices.
-    For private use only, use with cation!</p>
+    This codebase is intended to be used as an introductory teaching tool and may not represent current best practices.
+    For private use only, use with caution and void where prohibited!</p>
     <p><b>Warning: The underlying random engine is not cryptographically secure and should not be used for security or secure hashing.</b></p>
     </article>
     <article>
