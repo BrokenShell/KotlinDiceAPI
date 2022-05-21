@@ -1,6 +1,8 @@
 package com.rest.diceapi
 
-class NumericResponse(val result: Int) {}
+class DoubleResponse(val result: Double) {}
+
+class IntegerResponse(val result: Int) {}
 
 class BoolResponse(val result: Boolean) {}
 
