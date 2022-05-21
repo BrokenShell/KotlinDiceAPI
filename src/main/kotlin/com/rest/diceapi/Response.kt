@@ -1,3 +1,7 @@
 package com.rest.diceapi
 
-class Response(val randomNumber: Int) {}
+class NumericResponse(val result: Int) {}
+
+class BoolResponse(val result: Boolean) {}
+
+class TextResponse(val result: String) {}
