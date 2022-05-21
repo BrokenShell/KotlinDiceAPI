@@ -18,6 +18,7 @@
         <li>Kotlin: JVM (Java 11)</li>
         <li>Spring Boot: Maven</li>
         <li>AWS: Elastic Beanstalk - Corretto 11</li>
+        <li>Deployed API: <a href="http://restapi-dev2.us-east-1.elasticbeanstalk.com">YARGA</a></li>
     </ul>
     </article>
     <article>
@@ -29,7 +30,7 @@
         <li>Distribution: Flat Uniform => Range[0.0..1.0) *tail exclusive</li>
         <li>Method: GET</li>
         <li>Response: JSON</li>
-        <li>Example: <a href="/canonical">/canonical</a></li>
+        <li>Example: <a href="http://restapi-dev2.us-east-1.elasticbeanstalk.com/canonical">/canonical</a></li>
     </ul>
     <h4>One Die Roll</h4>
     <ul>
@@ -39,7 +40,7 @@
         <li>Method: GET</li>
         <li>Param `sides`: Size of die to be rolled. Default: 6</li>
         <li>Response: JSON</li>
-        <li>Example d12: <a href="/die?sides=12">/die?sides=12</a></li>
+        <li>Example d12: <a href="http://restapi-dev2.us-east-1.elasticbeanstalk.com/die?sides=12">/die?sides=12</a></li>
     </ul>
     <h4>Multi Dice Roll</h4>
     <ul>
@@ -50,7 +51,7 @@
         <li>Param `rolls`: Number of dice to be rolled. Default: 1</li>
         <li>Param `sides`: Size of dice to be rolled. Default: 20</li>
         <li>Response: JSON</li>
-        <li>Example 8d6: <a href="/dice?rolls=8&sides=6">/dice?rolls=8&sides=6</a></li>
+        <li>Example 8d6: <a href="http://restapi-dev2.us-east-1.elasticbeanstalk.com/dice?rolls=8&sides=6">/dice?rolls=8&sides=6</a></li>
     </ul>
     <h4>Percent True</h4>
     <ul>
@@ -60,7 +61,7 @@
         <li>Method: GET</li>
         <li>Param `chance`: Percent chance of returning true. Default: 50</li>
         <li>Response: JSON</li>
-        <li>Example 75%: <a href="/percent-true?chance=75">/percent-true?chance=75</a></li>
+        <li>Example 75%: <a href="http://restapi-dev2.us-east-1.elasticbeanstalk.com/percent-true?chance=75">/percent-true?chance=75</a></li>
     </ul>
     </article>
 </section>
