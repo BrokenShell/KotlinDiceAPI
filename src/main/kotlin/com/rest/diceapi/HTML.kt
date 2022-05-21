@@ -25,12 +25,12 @@ const val homepage: String = """<!DOCTYPE html>
     </style>
 </head>
 <body>
-<section>
-    <header>
+<header>
     <h1>Welcome to YARGA!</h1>
     <h2><i>Yet Another Random Generator API</i></h2>
     <h4>Bloom Institute of Technology<br>Robert Sharp, Data Science Manager</h4>
-    </header>
+</header>
+<section>
     <article>
     <h3>Abstract</h3>
     <p>YARGA provides convenient access to high-performance thread local random value generators via its friendly API.
@@ -83,7 +83,7 @@ const val homepage: String = """<!DOCTYPE html>
     <ul>
         <li>PercentTrue(chance: Int) -> Bool</li>
         <li>Returns a random boolean</li>
-        <li>Distribution: Linear => Literal[true false]</li>
+        <li>Distribution: Linear => Literal[true, false]</li>
         <li>Method: GET</li>
         <li>Param `chance`: Percent chance of returning true. Default: 50</li>
         <li>Response: JSON</li>
