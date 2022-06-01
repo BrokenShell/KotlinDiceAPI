@@ -23,3 +23,7 @@ fun dice(rolls: Int, sides: Int): Int {
     }
     return total
 }
+
+fun <T> getRandomElement(list: List<T>): T {
+    return list[randomBelow(list.size)]
+}

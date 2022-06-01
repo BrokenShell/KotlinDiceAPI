@@ -1,6 +1,7 @@
 package com.rest.diceapi
 
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
@@ -31,5 +32,10 @@ class ResponseController {
     @GetMapping("percent-true")
     fun getPercentTrue(@RequestParam(value = "chance", defaultValue = "50") chance: Int): Response {
         return Response(dice(1, 100) <= chance)
+    }
+
+    @PostMapping("random-value")
+    fun getRandomValue(@RequestParam(value = "sequence") sequence: List<String>): Response {
+        return Response(getRandomElement(sequence))
     }
 }
