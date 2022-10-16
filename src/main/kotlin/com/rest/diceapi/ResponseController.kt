@@ -1,7 +1,6 @@
 package com.rest.diceapi
 
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
@@ -18,23 +17,29 @@ class ResponseController {
         return Response(canonical())
     }
 
+    @GetMapping("/range")
+    fun getRange(@RequestParam(value = "lo", defaultValue = "1") lo: Int,
+                 @RequestParam(value = "hi", defaultValue = "10") hi: Int): Response {
+        return Response(randomRange(lo, hi))
+    }
+
     @GetMapping("/die")
     fun getDie(@RequestParam(value = "sides", defaultValue = "6") sides: Int): Response {
-        return Response(dice(1, sides))
+        return Response(randomDice(1, sides))
     }
 
     @GetMapping("/dice")
     fun getDice(@RequestParam(value = "rolls", defaultValue = "1") rolls: Int,
                 @RequestParam(value = "sides", defaultValue = "20") sides: Int): Response {
-        return Response(dice(rolls, sides))
+        return Response(randomDice(rolls, sides))
     }
 
-    @GetMapping("percent-true")
+    @GetMapping("/percent-true")
     fun getPercentTrue(@RequestParam(value = "chance", defaultValue = "50") chance: Int): Response {
-        return Response(dice(1, 100) <= chance)
+        return Response(randomDice(1, 100) <= chance)
     }
 
-    @PostMapping("random-value")
+    @GetMapping("/random-value")
     fun getRandomValue(@RequestParam(value = "sequence") sequence: List<String>): Response {
         return Response(getRandomElement(sequence))
     }

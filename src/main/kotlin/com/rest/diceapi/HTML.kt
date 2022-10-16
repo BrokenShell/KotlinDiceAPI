@@ -44,9 +44,20 @@ const val homepage: String = """<!DOCTYPE html>
         <li>Response: JSON</li>
         <li>Example: <a href="/canonical">/canonical</a></li>
     </ul>
+    <h4>Random Range</h4>
+    <ul>
+        <li>RandomRange(lo: Integer, hi: Integer) -> Integer</li>
+        <li>Returns a random integer</li>
+        <li>Distribution: Flat Uniform => Range[lo..hi] *inclusive</li>
+        <li>Method: GET</li>
+        <li>Param `lo`: Lower limit. Default: 1</li>
+        <li>Param `hi`: Upper limit. Default: 10</li>
+        <li>Response: JSON</li>
+        <li>Example 1-10: <a href="/range?lo=1&hi=10">/range?lo=1&hi=10</a></li>
+    </ul>
     <h4>One Die Roll</h4>
     <ul>
-        <li>Die(sides: Int) -> Int</li>
+        <li>Die(sides: Integer) -> Integer</li>
         <li>Returns a random integer</li>
         <li>Distribution: Flat Uniform => Range[1..sides] *inclusive</li>
         <li>Method: GET</li>
@@ -56,7 +67,7 @@ const val homepage: String = """<!DOCTYPE html>
     </ul>
     <h4>Multi Dice Roll</h4>
     <ul>
-        <li>Dice(rolls: Int sides: Int) -> Int</li>
+        <li>Dice(rolls: Integer sides: Integer) -> Integer</li>
         <li>Returns a random integer</li>
         <li>Distribution: Middle Geometric => Range[rolls..rolls*sides] *inclusive</li>
         <li>Method: GET</li>
@@ -67,13 +78,23 @@ const val homepage: String = """<!DOCTYPE html>
     </ul>
     <h4>Percent True</h4>
     <ul>
-        <li>PercentTrue(chance: Int) -> Bool</li>
+        <li>PercentTrue(chance: Integer) -> Bool</li>
         <li>Returns a random boolean</li>
         <li>Distribution: Linear => Literal[true, false]</li>
         <li>Method: GET</li>
         <li>Param `chance`: Percent chance of returning true. Default: 50</li>
         <li>Response: JSON</li>
         <li>Example 75%: <a href="/percent-true?chance=75">/percent-true?chance=75</a></li>
+    </ul>
+    <h4>Random Value</h4>
+    <ul>
+        <li>RandomValue(sequence: Array[String]) -> String</li>
+        <li>Returns a random string</li>
+        <li>Distribution: Flat Uniform</li>
+        <li>Method: GET</li>
+        <li>Param `sequence`: Comma separated strings</li>
+        <li>Response: JSON</li>
+        <li>Example [A,B,C,D]: <a href="/random-value?sequence=A,B,C,D">/random-value?sequence=A,B,C,D</a></li>
     </ul>
     </article>
 </section>
