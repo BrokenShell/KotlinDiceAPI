@@ -14,7 +14,7 @@ const val homepage: String = """<!DOCTYPE html>
 <header>
     <h1>Welcome to YARGA!</h1>
     <h2><i>Yet Another Random Generator API</i></h2>
-    <h4>Bloom Institute of Technology<br>Robert Sharp, Data Science Manager</h4>
+    <h4>Robert Sharp</h4>
 </header>
 <section>
     <article>
