@@ -1,7 +1,7 @@
 <header>
     <h1>Welcome to YARGA!</h1>
     <h2><i>Yet Another Random Generator API</i></h2>
-    <h4>Bloom Institute of Technology<br>Robert Sharp, Data Science Manager</h4>
+    <h4>Robert Sharp, Data Science Manager</h4>
 </header>
 <section>
     <article>
@@ -18,7 +18,6 @@
         <li>Kotlin: JVM (Java 11)</li>
         <li>Spring Boot: Maven</li>
         <li>AWS: Elastic Beanstalk - Corretto 11</li>
-        <li>Deployed API: <a href="http://restapi-dev2.us-east-1.elasticbeanstalk.com">YARGA</a></li>
     </ul>
     </article>
     <article>
